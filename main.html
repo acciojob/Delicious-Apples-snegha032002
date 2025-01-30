@@ -63,6 +63,21 @@
 			</div>
 		</div>
 	</section>
+	<script>
+        function changeImage(imgElement) {
+            document.getElementById("mainImage").src = imgElement.src;
+        }
+
+        function changeImageVariety(color) {
+            let imageMap = {
+                "Green": "https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png",
+                "Yellow": "https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png",
+                "Orange": "https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png",
+                "Red": "https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png"
+            };
+            document.getElementById("mainImage").src = imageMap[color];
+        }
+    </script>
 </body>
 
 </html>
